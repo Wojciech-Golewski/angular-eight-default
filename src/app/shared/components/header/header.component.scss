@@ -1,4 +1,6 @@
+@import '../../../../assets/color-palettes/main-colors.scss';
+
 .header-main-container {
-    width: 100%;
-    height: 50px;
+    height: 60px;
+    background-color: $light-mat-turquoise;
 }
