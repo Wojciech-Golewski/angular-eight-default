@@ -9,11 +9,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { HeaderComponent } from './components/header/header.component';
 
 
 
 @NgModule({
-  declarations: [FooterComponent, HomeComponent, NotFoundComponent],
+  declarations: [FooterComponent, HomeComponent, NotFoundComponent, HeaderComponent],
   imports: [
     CommonModule,
     LayoutModule,
@@ -23,6 +24,6 @@ import { MatListModule } from '@angular/material/list';
     MatIconModule,
     MatListModule
   ],
-  exports: [FooterComponent, HomeComponent, NotFoundComponent]
+  exports: [FooterComponent, HomeComponent, NotFoundComponent, HeaderComponent]
 })
 export class SharedModule { }
