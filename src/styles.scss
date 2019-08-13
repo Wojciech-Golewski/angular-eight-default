@@ -6,6 +6,60 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .main-container {
-    min-height: 70vw;
+    min-height: 1000px;
     background-color: $very-light-gray;
+}
+
+.big-text {
+    font-size: 50px;
+}
+
+.medium-text {
+    font-size: 40px;
+}
+
+.small-text {
+    font-size: 30px;
+}
+
+@media screen and (min-width: 2000px) {
+    .main-container {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .big-text {
+        font-size: 40px;
+    }
+
+    .medium-text {
+        font-size: 30px;
+    }
+
+    .small-text {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .big-text {
+        font-size: 30px;
+    }
+
+    .medium-text {
+        font-size: 20px;
+    }
+
+    .small-text {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text {
+        word-break: break-word;
+        text-align: center;
+        padding: 0 30px 10px;
+    }
 }
