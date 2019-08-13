@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { NavComponent } from './components/nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
@@ -14,7 +13,7 @@ import { MatListModule } from '@angular/material/list';
 
 
 @NgModule({
-  declarations: [FooterComponent, HomeComponent, NotFoundComponent, NavComponent],
+  declarations: [FooterComponent, HomeComponent, NotFoundComponent],
   imports: [
     CommonModule,
     LayoutModule,
@@ -24,6 +23,6 @@ import { MatListModule } from '@angular/material/list';
     MatIconModule,
     MatListModule
   ],
-  exports: [FooterComponent, HomeComponent, NotFoundComponent, NavComponent]
+  exports: [FooterComponent, HomeComponent, NotFoundComponent]
 })
 export class SharedModule { }
