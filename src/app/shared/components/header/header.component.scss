@@ -13,7 +13,17 @@
 }
 
 .header-content {
+    display: flex;
     width: 93%;
+}
+
+.app-title {
+    font-size: 35px;
+}
+
+.menu-option {
+    color: $white;
+    font-size: 30px;
 }
 
 .profile-button {
