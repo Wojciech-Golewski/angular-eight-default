@@ -1,6 +1,13 @@
 @import '../../../../assets/color-palettes/main-colors.scss';
 
 .footer-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     height: 150px;
     background-color: $white;
+}
+
+.footer-copy {
+    height: 50px;
 }
