@@ -1,6 +1,42 @@
 @import '../../../../assets/color-palettes/main-colors.scss';
 
 .header-main-container {
+    display: flex;
+    position: fixed;
     height: 60px;
     background-color: $light-mat-turquoise;
+}
+
+.header-container {
+    height: inherit;
+    display: inline-block;
+}
+
+.header-content {
+    display: flex;
+    width: 93%;
+}
+
+.app-title {
+    padding: 0 40px !important;
+}
+
+.menu-option {
+    color: $white;
+    font-size: 22px;
+    padding: 0 15px;
+}
+
+.profile-button {
+    display: flex;
+    width: 7%;
+    background-color: $dark-blue;
+}
+
+.profile-picture {
+    background-color: $light-mat-turquoise;
+    height: 45px;
+    width: 45px;
+    margin: auto;
+    border-radius: 50%;
 }

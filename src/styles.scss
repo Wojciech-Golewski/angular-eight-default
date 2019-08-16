@@ -63,3 +63,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
         padding: 0 30px 10px;
     }
 }
+
+button {
+    background-color: inherit;
+    border: none;
+}
+
+button:hover {
+    background-color: $dark-blue;
+}
