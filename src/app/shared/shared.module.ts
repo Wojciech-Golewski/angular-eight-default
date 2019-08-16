@@ -5,14 +5,14 @@ import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
-
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [FooterComponent, HomeComponent, NotFoundComponent, HeaderComponent],
   imports: [
     CommonModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AngularFontAwesomeModule
   ],
   exports: [FooterComponent, HomeComponent, NotFoundComponent, HeaderComponent]
 })
