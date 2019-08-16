@@ -1,23 +1,31 @@
 @import '../../../../assets/color-palettes/main-colors.scss';
 
 .header-main-container {
+    display: flex;
     position: fixed;
     height: 60px;
     background-color: $light-mat-turquoise;
 }
 
-.side {
+.header-container {
     height: inherit;
     display: inline-block;
-    width: 7%;
 }
 
 .header-content {
-    height: inherit;
-    display: inline-block;
     width: 93%;
 }
 
 .profile-button {
+    display: flex;
+    width: 7%;
     background-color: $dark-blue;
+}
+
+.profile-picture {
+    background-color: $light-mat-turquoise;
+    height: 45px;
+    width: 45px;
+    margin: auto;
+    border-radius: 50%;
 }
