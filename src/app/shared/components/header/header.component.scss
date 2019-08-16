@@ -18,12 +18,13 @@
 }
 
 .app-title {
-    padding: 0 40px;
+    padding: 0 40px !important;
 }
 
 .menu-option {
     color: $white;
     font-size: 22px;
+    padding: 0 15px;
 }
 
 .profile-button {
