@@ -6,13 +6,15 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [FooterComponent, HomeComponent, NotFoundComponent, HeaderComponent],
   imports: [
     CommonModule,
     FontAwesomeModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    RouterModule
   ],
   exports: [FooterComponent, HomeComponent, NotFoundComponent, HeaderComponent]
 })
