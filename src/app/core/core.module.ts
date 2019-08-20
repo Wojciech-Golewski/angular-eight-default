@@ -2,19 +2,20 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MainModule } from './main/main.module';
 import { SharedModule } from './shared/shared.module';
-
-
+import { ShopModule } from './shop/shop.module';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
     MainModule,
-    SharedModule
+    SharedModule,
+    ShopModule
   ],
   exports: [
     MainModule,
-    SharedModule
+    SharedModule,
+    ShopModule
   ]
 })
 export class CoreModule { }
