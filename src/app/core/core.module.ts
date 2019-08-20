@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MainModule } from './main/main.module';
+import { SharedModule } from './shared/shared.module';
 
 
 
@@ -8,7 +9,12 @@ import { MainModule } from './main/main.module';
   declarations: [],
   imports: [
     CommonModule,
-    MainModule
+    MainModule,
+    SharedModule
+  ],
+  exports: [
+    MainModule,
+    SharedModule
   ]
 })
 export class CoreModule { }
