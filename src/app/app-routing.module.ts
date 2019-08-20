@@ -6,6 +6,7 @@ import { NotFoundComponent } from './core/shared/components/not-found/not-found.
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'shop', loadChildren: () => import(`./core/shop/shop.module`).then(a => a.ShopModule) },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent }
 ];
