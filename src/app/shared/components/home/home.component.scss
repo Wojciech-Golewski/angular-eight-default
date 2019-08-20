@@ -20,6 +20,17 @@
     }
 }
 
+.image-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .main-site-container {
         flex-direction: column;
