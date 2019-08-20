@@ -6,9 +6,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { RouterModule } from '@angular/router';
+import { FilterAndSortComponent } from './components/filter-and-sort/filter-and-sort.component';
 
 @NgModule({
-  declarations: [FooterComponent, NotFoundComponent, HeaderComponent],
+  declarations: [FooterComponent, NotFoundComponent, HeaderComponent, FilterAndSortComponent],
   imports: [
     CommonModule,
     FontAwesomeModule,
