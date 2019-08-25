@@ -17,6 +17,6 @@ import { SearchComponent } from './components/search/search.component';
     AngularFontAwesomeModule,
     RouterModule
   ],
-  exports: [FooterComponent, NotFoundComponent, HeaderComponent, SearchComponent]
+  exports: [FooterComponent, NotFoundComponent, HeaderComponent, FilterAndSortComponent, SearchComponent]
 })
 export class SharedModule { }
