@@ -1,13 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-
-export interface PeriodicElement {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
-  description: string;
-}
+import { PeriodicElement } from '../models/periodic-element.model';
 
 @Injectable({
   providedIn: 'root'

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import { PeriodicElement } from '../../models/periodic-element.model';
 
 
 @Component({
@@ -16,6 +17,6 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 })
 export class ShopListComponent {
   columnsToDisplay = ['name', 'weight', 'symbol', 'position'];
-  // expandedElement: PeriodicElement | null;
+  expandedElement: PeriodicElement | null;
 }
 
