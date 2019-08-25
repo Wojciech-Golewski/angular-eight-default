@@ -1,10 +1,11 @@
+@import '../../../../../assets/color-palettes/main-colors.scss';
 
 .shop-list-container {
     width: 95%;
     margin: auto;
 }
 
-// @angular/material styles from table
+// @angular/material predefined styles mixed with own
 table {
     width: 100%;
 }
@@ -14,11 +15,14 @@ tr.example-detail-row {
 }
 
 tr.example-element-row:not(.example-expanded-row):hover {
-    background: #777;
+    background: $light-mat-turquoise;
+    .mat-cell {
+        color: $white;
+    }
 }
 
 tr.example-element-row:not(.example-expanded-row):active {
-    background: #efefef;
+    background: $light-mat-green;
 }
 
 .example-element-row td {
@@ -35,7 +39,7 @@ tr.example-element-row:not(.example-expanded-row):active {
     border: 2px solid black;
     padding: 8px;
     font-weight: lighter;
-    margin: 8px 0;
+    margin: 20px 0;
     height: 104px;
 }
 
