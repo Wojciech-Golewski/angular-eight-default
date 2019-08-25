@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MainModule } from './main/main.module';
 import { SharedModule } from './shared/shared.module';
 import { ShopModule } from './shop/shop.module';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [],
@@ -10,7 +11,8 @@ import { ShopModule } from './shop/shop.module';
     CommonModule,
     MainModule,
     SharedModule,
-    ShopModule
+    ShopModule,
+    MaterialModule
   ],
   exports: [
     MainModule,
