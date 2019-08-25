@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { PeriodicElement } from '../../models/periodic-element.model';
+import { ShopItemsService } from '../../services/shop-items.service';
 
 
 @Component({
@@ -15,8 +16,17 @@ import { PeriodicElement } from '../../models/periodic-element.model';
     ]),
   ]
 })
-export class ShopListComponent {
+export class ShopListComponent implements OnInit {
   columnsToDisplay = ['name', 'weight', 'symbol', 'position'];
   expandedElement: PeriodicElement | null;
+  dataSource: PeriodicElement[];
+
+  constructor(private service: ShopItemsService) {}
+
+  ngOnInit() {
+    this.service.getAll().subscribe(data => {
+      this.dataSource = data;
+    })
+  }
 }
 
