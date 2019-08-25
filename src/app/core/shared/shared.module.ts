@@ -8,15 +8,31 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { RouterModule } from '@angular/router';
 import { FilterAndSortComponent } from './components/filter-and-sort/filter-and-sort.component';
 import { SearchComponent } from './components/search/search.component';
+import { MatTableModule } from '@angular/material'  
+
 
 @NgModule({
-  declarations: [FooterComponent, NotFoundComponent, HeaderComponent, FilterAndSortComponent, SearchComponent],
+  declarations: [
+    FooterComponent,
+    NotFoundComponent,
+    HeaderComponent,
+    FilterAndSortComponent,
+    SearchComponent
+  ],
   imports: [
     CommonModule,
     FontAwesomeModule,
     AngularFontAwesomeModule,
-    RouterModule
+    RouterModule,
+    MatTableModule
   ],
-  exports: [FooterComponent, NotFoundComponent, HeaderComponent, FilterAndSortComponent, SearchComponent]
+  exports: [
+    FooterComponent,
+    NotFoundComponent,
+    HeaderComponent,
+    FilterAndSortComponent,
+    SearchComponent,
+    MatTableModule
+  ]
 })
 export class SharedModule { }
