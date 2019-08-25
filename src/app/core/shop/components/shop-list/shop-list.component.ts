@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { PeriodicElement } from '../../models/periodic-element.model';
 import { ShopItemsService } from '../../services/shop-items.service';
+import { MatPaginator, MatTableDataSource } from '@angular/material';
 
 
 @Component({
@@ -19,14 +20,18 @@ import { ShopItemsService } from '../../services/shop-items.service';
 export class ShopListComponent implements OnInit {
   columnsToDisplay = ['name', 'weight', 'symbol', 'position'];
   expandedElement: PeriodicElement | null;
-  dataSource: PeriodicElement[];
+  dataSource: MatTableDataSource<PeriodicElement>;
 
-  constructor(private service: ShopItemsService) {}
+  @ViewChild(MatPaginator, { static: true}) paginator: MatPaginator;
+
+  constructor(private service: ShopItemsService) {
+    this.service.getAll().subscribe(data => {
+      this.dataSource = new MatTableDataSource(data);
+    })
+  }
 
   ngOnInit() {
-    this.service.getAll().subscribe(data => {
-      this.dataSource = data;
-    })
+    this.dataSource.paginator = this.paginator;
   }
 }
 
