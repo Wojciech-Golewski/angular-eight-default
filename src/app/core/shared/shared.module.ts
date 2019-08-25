@@ -8,7 +8,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { RouterModule } from '@angular/router';
 import { FilterAndSortComponent } from './components/filter-and-sort/filter-and-sort.component';
 import { SearchComponent } from './components/search/search.component';
-import { MatTableModule } from '@angular/material'  
+import { MaterialModule } from '../material/material.module';
 
 
 @NgModule({
@@ -24,7 +24,7 @@ import { MatTableModule } from '@angular/material'
     FontAwesomeModule,
     AngularFontAwesomeModule,
     RouterModule,
-    MatTableModule
+    MaterialModule
   ],
   exports: [
     FooterComponent,
@@ -32,7 +32,7 @@ import { MatTableModule } from '@angular/material'
     HeaderComponent,
     FilterAndSortComponent,
     SearchComponent,
-    MatTableModule
+    MaterialModule
   ]
 })
 export class SharedModule { }
