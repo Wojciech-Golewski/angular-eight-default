@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 
 export interface PeriodicElement {
   name: string;
@@ -14,6 +15,9 @@ export interface PeriodicElement {
 export class ShopItemsService {
   dataSource = ELEMENT_DATA;
   
+  getAll(): Observable<PeriodicElement[]> {
+    return of(this.dataSource);
+  }
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
